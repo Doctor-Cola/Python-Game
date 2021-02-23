@@ -104,7 +104,7 @@ def gameLoop():
         #物理引擎
         velocity += gravity
         bird[1] += velocity
-        #不知道为什么，这个旋转实现不了，先写着里吧，找到原因了再说
+        #不知道为什么，这个旋转实现不了，有大神看到了帮忙改一下
         bird_wing_down = pygame.transform.rotate(bird_wing_down_copy, 90*(velocity//15))
         bird_wing_up = pygame.transform.rotate(bird_wing_up_copy, 90*(velocity//15))
         
